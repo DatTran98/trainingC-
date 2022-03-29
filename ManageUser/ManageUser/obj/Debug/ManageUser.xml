@@ -1,0 +1,497 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ManageUser
+</name>
+</assembly>
+<members>
+<member name="T:ManageUser.Controllers.AddEmployeeController">
+ Project  : Traning_nic_vb
+ Class  : AddEmployeeController
+ ------------------------------------ 
+ <summary>
+ Controller to control Create permision task
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.AddEmployeeController.CreateEmployee">
+ ------------------------------------
+ <summary>
+ Get method to show view add employee
+ </summary>
+ <returns>The result</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.AddEmployeeController.AddEmployee">
+ ------------------------------------
+ <summary>
+ Post method to control Add new employee
+ </summary>
+ <returns></returns>
+  ------------------------------------
+</member>
+<member name="T:ManageUser.Controllers.DeleteEmployeeController">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : DeleteEmployeeController
+ ------------------------------------ 
+ <summary>
+ Controller to control deleting permision task
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.DeleteEmployeeController.DeleteEmployee">
+ ------------------------------------
+ <summary>
+ Funtion to call Model do delete Employee
+ </summary>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.Controllers.EditEmployeeController">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : EditEmployeeController
+ ------------------------------------ 
+ <summary>
+ Controller to control edit permision task
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.EditEmployeeController.GetUserEdit">
+ ------------------------------------
+ <summary>
+ Get detail user to show view to edit
+ </summary>
+ <returns>The result as view</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.EditEmployeeController.EditEmployee">
+ ------------------------------------
+ <summary>
+ Function To control update info employee
+ </summary>
+ <returns>The result as view</returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.Controllers.ExportEmployeeController">
+ Project  : Traning_nic_vb
+ Class  : ExportEmployeeController
+ ------------------------------------ 
+ <summary>
+ Controller to control Export permision task
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ExportEmployeeController.ExportEmp">
+ ------------------------------------
+ <summary>
+ Get Mothod to do export employ and download to location file
+ </summary>
+ <returns>The result</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ExportEmployeeController.WriteToCSV(System.Data.DataTable,System.String)">
+ ------------------------------------
+ <summary>
+ Function to write data to csvfile
+ </summary>
+ <param name="dataTable"></param>
+ <param name="filePath"></param>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.Controllers.ImportController">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : ImportController
+ ------------------------------------ 
+ <summary>
+ Controller to control import Employee form csv file
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ImportController.Index">
+ ------------------------------------
+ <summary>
+ Funcion show view to do import file
+ </summary>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ImportController.ImportEmp(System.Web.HttpPostedFileBase)">
+ ------------------------------------
+ <summary>
+ Funtion to directly import employee when click summit
+ </summary>
+ <param name="postFile">File send from client</param>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ImportController.ValidateEmpoyee(System.Collections.Generic.List{ManageUser.EmployeeModel})">
+ ------------------------------------
+ <summary>
+ Function to check validate list employee from csv
+ </summary>
+ <param name="listEmp">list emplyee need to check before import</param>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ImportController.CheckSimilarEmail(System.Collections.Generic.List{ManageUser.EmployeeModel})">
+ ------------------------------------
+ <summary>
+ Email check similar in import file
+ </summary>
+ <param name="listEmp">List employee from file</param>
+ <returns>message show the error</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ImportController.CheckSimilarPhone(System.Collections.Generic.List{ManageUser.EmployeeModel})">
+ ------------------------------------
+ <summary>
+ Phone check similar in import file
+ </summary>
+ <param name="listEmp">List employee from file</param>
+ <returns>message show the error</returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.Controllers.ListUsersController">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : ListUsersController
+ ------------------------------------ 
+ <summary>
+ Controller to control Getlist employee permision task
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.ListUsersController.GetListUsers">
+ ------------------------------------
+ <summary>
+ Get method to get all user form DB to show view
+ </summary>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.Controllers.LoginController">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : LoginController
+ ------------------------------------ 
+ <summary>
+ Controller to control login permision task
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.LoginController.Login">
+ ------------------------------------
+ <summary>
+ Get method to show login view
+ </summary>
+ <returns>The result as view</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Controllers.LoginController.Verify">
+ ------------------------------------
+ <summary>
+ Post method to verify login request
+ </summary>
+ <returns>The result login</returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.CreateNewEmployeeModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : Public Class CreateNewEmployeeModel
+ ------------------------------------ 
+ <summary>
+ Class model to connect DB and add new employee
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.CreateNewEmployeeModel.ConnectionString">
+ <summary>
+ Set connectionString 
+ </summary>
+</member>
+<member name="M:ManageUser.CreateNewEmployeeModel.CreateNewEmployee(ManageUser.EmployeeModel)">
+ <summary>
+ Connect DB and create new employee
+ </summary>
+ <param name="model">model As a Employee</param>
+</member>
+<member name="T:ManageUser.DeleteEmpModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : DeleteEmpModel
+ ------------------------------------ 
+ <summary>
+ DAO to conect to DB and Delete Employee action
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.DeleteEmpModel.ConnectionString">
+ <summary>
+ Method to set string connect to DB
+ </summary>
+</member>
+<member name="M:ManageUser.DeleteEmpModel.DeleteEmployee(System.String)">
+ <summary>
+ Method to delete employee form list
+ </summary>
+ <param name="email">Email to match employee need to delete</param>
+</member>
+<member name="T:ManageUser.EmloyeeDetailEdit">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : EmloyeeDetailEdit
+ ------------------------------------ 
+ <summary>
+ DAO to conect to DB and Edit Employee action
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.EmloyeeDetailEdit.ConnectionString">
+ <summary>
+ Method to set string connect to DB
+ </summary>
+</member>
+<member name="M:ManageUser.EmloyeeDetailEdit.GetDetailEmployeeByEmail(System.String)">
+ <summary>
+ Get Detail Data employee By email
+ </summary>
+ <param name="searchValue">Email'Employee want to search</param>
+ <returns>The Employee</returns>
+</member>
+<member name="M:ManageUser.EmloyeeDetailEdit.VerifyEmailExist(System.String)">
+ <summary>
+ Check Email exist
+ </summary>
+ <param name="email">Email need to chec</param>
+ <returns>True if exist, false if not exist</returns>
+</member>
+<member name="M:ManageUser.EmloyeeDetailEdit.VerifyPhoneExist(System.String)">
+ <summary>
+ Check Email exist
+ </summary>
+ <param name="phone">Phone need to chec</param>
+ <returns>True if exist, false if not exist</returns>
+</member>
+<member name="M:ManageUser.EmloyeeDetailEdit.UpdateNewEmployee(ManageUser.EmployeeModel,System.String)">
+ <summary>
+ Update employee by email
+ </summary>
+ <param name="model">mEdel as infor employee </param>
+ <param name="email">Email employee want to update</param>
+</member>
+<member name="T:ManageUser.EmployeeModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : EmployeeModel
+ ------------------------------------ 
+ <summary>
+ Model As A Employee to save Employee properties
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="P:ManageUser.EmployeeModel.Fullname">
+ ---------------------------------
+ <summary>
+ Getter and Setter Fullname Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:ManageUser.EmployeeModel.Email">
+ ---------------------------------
+ <summary>
+ Getter and Setter Email Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:ManageUser.EmployeeModel.Phone">
+ ---------------------------------
+ <summary>
+ Getter and Setter Phone Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:ManageUser.EmployeeModel.JobTitle">
+ ---------------------------------
+ <summary>
+ Getter and Setter JobTitle Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:ManageUser.EmployeeModel.Address">
+ ---------------------------------
+ <summary>
+ Getter and Setter Address Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="T:ManageUser.UserModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : UserModel
+ ------------------------------------ 
+ <summary>
+ Model As A User to save User properties
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="P:ManageUser.UserModel.Username">
+ ---------------------------------
+ <summary>
+ Getter and Setter Username Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:ManageUser.UserModel.PassWord">
+ ---------------------------------
+ <summary>
+ Getter and Setter PassWord Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="T:ManageUser.ListUserModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : ListUserModel
+ ------------------------------------ 
+ <summary>
+ DAO to conect to DB and Getlist Employee action
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.ListUserModel.ConnectionString">
+ <summary>
+ Method to set string connect to DB
+ </summary>
+</member>
+<member name="M:ManageUser.ListUserModel.GetListUser(System.String)">
+ <summary>
+ Get List user with search value
+ </summary>
+ <param name="searchValue">The email of employee case of user email</param>
+ <returns>Datatable include list employee</returns>
+</member>
+<member name="T:ManageUser.LoginModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : LoginModel
+ ------------------------------------ 
+ <summary>
+ DAO to conect to DB and Login action
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.LoginModel.ConnectionString">
+ <summary>
+ Method to set string connect to DB
+ </summary>
+</member>
+<member name="M:ManageUser.LoginModel.Verify(ManageUser.UserModel)">
+ <summary>
+ Conect DB and check Verify Login
+ </summary>
+ <param name="user">Account need verify as user</param>
+ <returns>True if corect, fail if not</returns>
+</member>
+<member name="T:ManageUser.Common">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : Common
+ ------------------------------------ 
+ <summary>
+ Class Include the utils funtion
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Common.EncryptPassword(System.String)">
+ ------------------------------------
+ <summary>
+ Function to encrypt password
+ </summary>
+ <param name="strToHash">String to encryt</param>
+ <returns>String encrypted</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Common.GetListJobTitle">
+ ------------------------------------
+ <summary>
+ Give the list Item
+ </summary>
+ <returns>list item job data</returns>
+ ------------------------------------
+</member>
+<member name="M:ManageUser.Common.ValidateEmp(ManageUser.EmployeeModel,System.String,System.String)">
+ ------------------------------------
+ <summary>
+ Validate infor for Employee
+ </summary>
+ <param name="empEdit">employee need to validate</param>
+ <param name="oldEmail">Old Email of employee</param>
+ <param name="oldPhone">Old Phone of employee</param>
+ <returns>String error if has</returns>
+ ------------------------------------
+</member>
+<member name="T:ManageUser.Constant">
+ Project  : Traning_nic_vb
+ Class  : Constant
+ ------------------------------------ 
+ <summary>
+ Clas contanin the const variable in project
+ </summary>
+ <history>
+  DatTB 25/06/2021 Created
+ </history>
+ ------------------------------------
+</member>
+</members>
+</doc>

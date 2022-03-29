@@ -1,0 +1,677 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UserManager
+</name>
+</assembly>
+<members>
+<member name="T:UserManager.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserManager.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:UserManager.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:UserManager.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:UserManager.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:UserManager.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:UserManager.DBQuery">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : DBQuery
+ ------------------------------------ 
+ <summary>
+ DBQuery as a DAO layer to conect to DB and do actions
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.ConnectionString">
+ ------------------------------------
+ <summary>
+ Method to set string connect to DB
+ </summary>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.VerifyLogin(UserManager.UserModel)">
+ ------------------------------------
+ <summary>
+ Conect DB and check Verify Login
+ </summary>
+ <param name="user">Account need verify as user</param>
+ <returns>True if corect, fail if not</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.GetListUser(System.String)">
+ ------------------------------------
+ <summary>
+ Get List user with search value
+ </summary>
+ <param name="searchValue">The email of employee case of user email</param>
+ <returns>Datatable include list employee</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.VerifyEmailExist(System.String)">
+ ------------------------------------
+ <summary>
+ Check Email exist
+ </summary>
+ <param name="email">Email need to chec</param>
+ <returns>True if exist, false if not exist</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.VerifyPhoneExist(System.String)">
+ ------------------------------------
+ <summary>
+ Check Email exist
+ </summary>
+ <param name="phone">Phone need to chec</param>
+ <returns>True if exist, false if not exist</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.UpdateEmployee(UserManager.EmployeeModel,System.String)">
+ ------------------------------------
+ <summary>
+ Update employee by email
+ </summary>
+ <param name="model">mEdel as infor employee </param>
+ <param name="email">Email employee want to update</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.DeleteEmployee(System.String)">
+ ------------------------------------
+ <summary>
+ Method to delete employee form list
+ </summary>
+ <param name="email">Email to match employee need to delete</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.DBQuery.CreateNewEmployee(UserManager.EmployeeModel)">
+ ------------------------------------
+ <summary>
+ Connect DB and create new employee
+ </summary>
+ <param name="model">model As a Employee</param>
+ ------------------------------------
+</member>
+<member name="F:UserManager._Error._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:UserManager.ListUsers">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : ListUsers
+ ------------------------------------ 
+ <summary>
+ Clas do the action in ListUsers page
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="F:UserManager.ListUsers._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._MessageAdd">
+<summary>
+MessageAdd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._NewFullname">
+<summary>
+NewFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._NewEmail">
+<summary>
+NewEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._NewJob">
+<summary>
+NewJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._NewPhone">
+<summary>
+NewPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._NewAddress">
+<summary>
+NewAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._BtnCancel">
+<summary>
+BtnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._BtnAdd">
+<summary>
+BtnAdd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._BtnLogout">
+<summary>
+BtnLogout control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._SearchValue">
+<summary>
+SearchValue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._BtnSearch">
+<summary>
+BtnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._Message">
+<summary>
+Message control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._ImportFile">
+<summary>
+ImportFile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._BtnImport">
+<summary>
+BtnImport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._BtnExport">
+<summary>
+BtnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.ListUsers._GridViewEmployees">
+<summary>
+GridViewEmployees control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:UserManager.ListUsers.Page_Load(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Load the begin page with data
+ </summary>
+ <param name="sender">Object sender</param>
+ <param name="e">Event</param>
+  ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.Page_PreRender(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the PreRender event of the Page control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.LoadData">
+  ------------------------------------
+  <summary>
+ Load Data to list user page
+ </summary>
+  ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.GridViewEmployees_RowEditing(System.Object,System.Web.UI.WebControls.GridViewEditEventArgs)">
+  ------------------------------------
+  <summary>
+  Handles the RowCancelingEdit event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Web.UI.WebControls.GridViewEditEventArgs"/> instance containing the event data.</param>
+  ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.GridViewEmployees_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the RowCancelingEdit event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Web.UI.WebControls.GridViewCancelEditEventArgs"/> instance containing the event data.</param>
+  ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.GridViewEmployees_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the RowUpdating event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Web.UI.WebControls.GridViewUpdateEventArgs"/> instance containing the event data.</param>
+  ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.GridViewEmployees_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the RowDeleting event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Web.UI.WebControls.GridViewDeleteEventArgs"/> instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.Grid_PageIndexChanged(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Page Index changes event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Web.UI.WebControls.GridViewPageEventArgs"/> instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.AddButton_Onclick(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Button Add New Employee event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.SearchButton_Onclick(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Button Search event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.ImportButton_Onclick(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Button Import Employees event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.ExportButton_Onclick(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Button Export Employees event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.LogButton_Onclick(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Button Logout event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.Selection_Change(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Select dropdown change event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.DisplayEmptyTextBox">
+ ------------------------------------
+ <summary>
+ The medthod set all textbox on view to Empty
+ </summary>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.WriteToCSV(System.Data.DataTable,System.String)">
+ ------------------------------------
+ <summary>
+ Function to write data to csvfile
+ </summary>
+ <param name="dataTable"></param>
+ <param name="filePath"></param>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.ValidateEmpoyee(System.Collections.Generic.List{UserManager.EmployeeModel})">
+ ------------------------------------
+ <summary>
+ Function to check validate list employee from csv
+ </summary>
+ <param name="listEmp">list emplyee need to check before import</param>
+ <returns></returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.CheckSimilarEmail(System.Collections.Generic.List{UserManager.EmployeeModel})">
+ ------------------------------------
+ <summary>
+ Email check similar in import file
+ </summary>
+ <param name="listEmp">List employee from file</param>
+ <returns>message show the error</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.CheckSimilarPhone(System.Collections.Generic.List{UserManager.EmployeeModel})">
+ ------------------------------------
+ <summary>
+ Phone check similar in import file
+ </summary>
+ <param name="listEmp">List employee from file</param>
+ <returns>message show the error</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.CancelButton_Onclick(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Button Cancel Add Employee event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.KeepPopUpShowing">
+  ------------------------------------
+ <summary>
+ Keep popup on client showing
+ </summary>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.Email_TextChange(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Texxt Change  event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:UserManager.ListUsers.Phone_TextChange(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Texxt Change  event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="T:UserManager.Login">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : Login
+ ------------------------------------ 
+ <summary>
+ Clas do the action in login page
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="F:UserManager.Login._Login">
+<summary>
+Login control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.Login._Message">
+<summary>
+Message control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.Login._Username">
+<summary>
+Username control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.Login._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UserManager.Login._BtnLogin">
+<summary>
+BtnLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:UserManager.EmployeeModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : EmployeeModel
+ ------------------------------------ 
+ <summary>
+ Model As A Employee to save Employee properties
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="P:UserManager.EmployeeModel.Fullname">
+ ---------------------------------
+ <summary>
+ Getter and Setter Fullname Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:UserManager.EmployeeModel.Email">
+ ---------------------------------
+ <summary>
+ Getter and Setter Email Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:UserManager.EmployeeModel.Phone">
+ ---------------------------------
+ <summary>
+ Getter and Setter Phone Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:UserManager.EmployeeModel.JobTitle">
+ ---------------------------------
+ <summary>
+ Getter and Setter JobTitle Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:UserManager.EmployeeModel.Address">
+ ---------------------------------
+ <summary>
+ Getter and Setter Address Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="T:UserManager.UserModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : UserModel
+ ------------------------------------ 
+ <summary>
+ Model As A User to save User properties
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="P:UserManager.UserModel.Username">
+ ---------------------------------
+ <summary>
+ Getter and Setter Username Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:UserManager.UserModel.PassWord">
+ ---------------------------------
+ <summary>
+ Getter and Setter PassWord Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="T:UserManager.Common">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : Common
+ ------------------------------------ 
+ <summary>
+ Class Include the utils funtion
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:UserManager.Common.EncryptPassword(System.String)">
+ ------------------------------------
+ <summary>
+ Function to encrypt password
+ </summary>
+ <param name="strToHash">String to encryt</param>
+ <returns>String encrypted</returns>
+ ------------------------------------
+</member>
+<member name="M:UserManager.Common.ValidateEmp(UserManager.EmployeeModel,System.String,System.String)">
+ ------------------------------------
+ <summary>
+ Validate infor for Employee
+ </summary>
+ <param name="empEdit">employee need to validate</param>
+ <param name="oldEmail">Old Email of employee</param>
+ <param name="oldPhone">Old Phone of employee</param>
+ <returns>String error if has</returns>
+ ------------------------------------
+</member>
+<member name="T:UserManager.Constant">
+ Project  : Traning_nic_vb
+ Class  : Constant
+ ------------------------------------ 
+ <summary>
+ Clas contanin the const variable in project
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+</members>
+</doc>

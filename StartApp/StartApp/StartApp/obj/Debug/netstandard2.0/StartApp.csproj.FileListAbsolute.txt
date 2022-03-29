@@ -1,0 +1,16 @@
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\bin\Debug\netstandard2.0\StartApp.deps.json
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\bin\Debug\netstandard2.0\StartApp.dll
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\bin\Debug\netstandard2.0\ref\StartApp.dll
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\bin\Debug\netstandard2.0\StartApp.pdb
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.csproj.AssemblyReference.cache
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.AssemblyInfoInputs.cache
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.AssemblyInfo.cs
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.csproj.CoreCompileInputs.cache
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.dll
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\ref\StartApp.dll
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.pdb
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\View\NoteEntryPage.xaml.g.cs
+C:\Users\tranbadat\source\repos\StartApp\StartApp\StartApp\obj\Debug\netstandard2.0\StartApp.GeneratedMSBuildEditorConfig.editorconfig

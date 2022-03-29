@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tranbadat\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tranbadat\\.nuget\\packages"
+    ]
+  }
+}

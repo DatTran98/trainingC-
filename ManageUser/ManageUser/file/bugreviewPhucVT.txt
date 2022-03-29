@@ -1,0 +1,33 @@
+Các file bài tập chưa có comment theo coding convention 
+
+================
+Bài tập ExVisualBasic
+*Bài 3:
+1.Chưa kiểm tra giá trị nhập không phải là số
+2.Code show kết quả ra màn hình dang copy nên luôn hiển thị "a"+"b"
+
+================
+Bài tập ExNamspace
+*Bài 2: Sai kết quả, đang copy thiếu 1 phần tử từ mảng 1 sang mảng 2
+
+================
+Bài tập ExceptionEX
+Thấy đang show một exception khác so với exception đang thực hiện
+
+================
+Bài Tập delegate and event
+* ArrayDel 
+- Có những code thừa chưa được lược bỏ
+ Number five 
+Tại sao lại là
+For i As Integer = 0 To 5 - 1
+mà không phải là For i As Integer = 0 To 4
+
+================
+Bài tập input output
+* Bài 1: 
+-Chưa kiểm tra file có tồn tại hay k,nếu k kiểm tra sẽ xảy ra excption
+- Đếm số lượng từ và ký tự sai nếu sử dụng nhiều tab và nhiều space
+*Bài 3
+- Chưa check tuổi và điểm = nếu nhập ký tự
+- Có đường link trang web lạ trong code

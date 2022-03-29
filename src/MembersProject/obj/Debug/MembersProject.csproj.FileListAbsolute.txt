@@ -1,0 +1,3 @@
+C:\Users\tranbadat\source\repos\src\MembersProject\obj\Debug\MembersProject.csproj.App.config
+C:\Users\tranbadat\source\repos\src\MembersProject\obj\Debug\MembersProject.csproj.AssemblyReference.cache
+C:\Users\tranbadat\source\repos\src\MembersProject\obj\Debug\MembersProject.csproj.CoreCompileInputs.cache

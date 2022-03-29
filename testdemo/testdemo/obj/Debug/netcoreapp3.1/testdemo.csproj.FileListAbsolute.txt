@@ -1,0 +1,15 @@
+C:\Users\tranbadat\source\repos\testdemo\testdemo\bin\Debug\netcoreapp3.1\testdemo.exe
+C:\Users\tranbadat\source\repos\testdemo\testdemo\bin\Debug\netcoreapp3.1\testdemo.deps.json
+C:\Users\tranbadat\source\repos\testdemo\testdemo\bin\Debug\netcoreapp3.1\testdemo.runtimeconfig.json
+C:\Users\tranbadat\source\repos\testdemo\testdemo\bin\Debug\netcoreapp3.1\testdemo.runtimeconfig.dev.json
+C:\Users\tranbadat\source\repos\testdemo\testdemo\bin\Debug\netcoreapp3.1\testdemo.dll
+C:\Users\tranbadat\source\repos\testdemo\testdemo\bin\Debug\netcoreapp3.1\testdemo.pdb
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.csprojAssemblyReference.cache
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.Form1.resources
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.csproj.GenerateResource.cache
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.AssemblyInfoInputs.cache
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.AssemblyInfo.cs
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.csproj.CoreCompileInputs.cache
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.dll
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.pdb
+C:\Users\tranbadat\source\repos\testdemo\testdemo\obj\Debug\netcoreapp3.1\testdemo.genruntimeconfig.cache

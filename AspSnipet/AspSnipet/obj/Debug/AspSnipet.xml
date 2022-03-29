@@ -1,0 +1,313 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AspSnipet
+</name>
+</assembly>
+<members>
+<member name="T:AspSnipet.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:AspSnipet.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:AspSnipet.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:AspSnipet.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:AspSnipet.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:AspSnipet.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="F:AspSnipet.AddNewUser._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._MessageAdd">
+<summary>
+MessageAdd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._NewFullname">
+<summary>
+NewFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._NewEmail">
+<summary>
+NewEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._NewJob">
+<summary>
+NewJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._NewPhone">
+<summary>
+NewPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._NewAddress">
+<summary>
+NewAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._BtnCancel">
+<summary>
+BtnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspSnipet.AddNewUser._BtnAdd">
+<summary>
+BtnAdd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:AspSnipet.AddNewUser.Selection_Change(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Select dropdown change event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.AddNewUser.AddButton_Onclick(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Button Add New Employee event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.AddNewUser.CancelButton_Onclick(System.Object,System.EventArgs)">
+  ------------------------------------
+  <summary>
+ Handles the Button Cancel Add Employee event of the GridViewUser control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.AddNewUser.SetAllTextBoxDefault">
+  ------------------------------------
+  <summary>
+ Set All textbox on view to Empty
+ </summary>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.AddNewUser.Email_TextChange(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Texxt Change  event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.AddNewUser.KeepPopUpShowing">
+  ------------------------------------
+ <summary>
+ Keep popup on client showing
+ </summary>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.AddNewUser.Phone_TextChange(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Handles the Texxt Change  event of the control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The instance containing the event data.</param>
+ ------------------------------------
+</member>
+<member name="T:AspSnipet.DBQuery">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : DBQuery
+ ------------------------------------ 
+ <summary>
+ DBQuery as a DAO layer to conect to DB and do actions
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.ConnectionString">
+ ------------------------------------
+ <summary>
+ Method to set string connect to DB
+ </summary>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.GetListUser(System.String)">
+ ------------------------------------
+ <summary>
+ Get List user with search value
+ </summary>
+ <param name="searchValue">The email of employee case of user email</param>
+ <returns>Datatable include list employee</returns>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.VerifyEmailExist(System.String)">
+ ------------------------------------
+ <summary>
+ Check Email exist
+ </summary>
+ <param name="email">Email need to chec</param>
+ <returns>True if exist, false if not exist</returns>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.VerifyPhoneExist(System.String)">
+ ------------------------------------
+ <summary>
+ Check Email exist
+ </summary>
+ <param name="phone">Phone need to chec</param>
+ <returns>True if exist, false if not exist</returns>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.UpdateEmployee(AspSnipet.EmployeeModel,System.String)">
+ ------------------------------------
+ <summary>
+ Update employee by email
+ </summary>
+ <param name="model">mEdel as infor employee </param>
+ <param name="email">Email employee want to update</param>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.DeleteEmployee(System.String)">
+ ------------------------------------
+ <summary>
+ Method to delete employee form list
+ </summary>
+ <param name="email">Email to match employee need to delete</param>
+ ------------------------------------
+</member>
+<member name="M:AspSnipet.DBQuery.CreateNewEmployee(AspSnipet.EmployeeModel)">
+ ------------------------------------
+ <summary>
+ Connect DB and create new employee
+ </summary>
+ <param name="model">model As a Employee</param>
+ ------------------------------------
+</member>
+<member name="T:AspSnipet.EmployeeModel">
+ ------------------------------------
+ Project  : Traning_nic_vb
+ Class  : EmployeeModel
+ ------------------------------------ 
+ <summary>
+ Model As A Employee to save Employee properties
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="P:AspSnipet.EmployeeModel.Fullname">
+ ---------------------------------
+ <summary>
+ Getter and Setter Fullname Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:AspSnipet.EmployeeModel.Email">
+ ---------------------------------
+ <summary>
+ Getter and Setter Email Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:AspSnipet.EmployeeModel.Phone">
+ ---------------------------------
+ <summary>
+ Getter and Setter Phone Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:AspSnipet.EmployeeModel.JobTitle">
+ ---------------------------------
+ <summary>
+ Getter and Setter JobTitle Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="P:AspSnipet.EmployeeModel.Address">
+ ---------------------------------
+ <summary>
+ Getter and Setter Address Property
+ </summary>
+ ---------------------------------
+</member>
+<member name="T:AspSnipet.Constant">
+ Project  : Traning_nic_vb
+ Class  : Constant
+ ------------------------------------ 
+ <summary>
+ Clas contanin the const variable in project
+ </summary>
+ <history>
+  DatTB 05/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+</members>
+</doc>
